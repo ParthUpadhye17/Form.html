@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style type="text/css">
+        body{
+                background-color: azure;
+        }
+        h2{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        form{
+            width: 350px;
+            background-color: aliceblue;
+            padding: 15px 40px 40px;
+            margin: 15px auto;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: left;
+        }
+        input, select{
+            border: 1px solid black;
+            padding: 10px;
+            width: 200px;
+            box-sizing: border-box;
+            border-radius: 2px;
+         }
+         label{
+            display:block;
+            margin-bottom: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+         }
+         div{
+            padding-bottom: 12px;
+         }
+         input[type ="submit"]{
+         font-size: 20px;
+         background: darkgreen;
+         border-color: black;
+         
+         color: white;
+         margin-top: 10px;
+         cursor: pointer;
+         }
+         p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         }
+        
+    </style>
+</head>
+<body>
+   
+    <form action="registered.jsp" method="post">
+        <h2>Register Here</h2>
+        <div>
+           <label for="fname">Your Full Name:</label><input type="text" name="fname">
+        </div>
+        <div>
+            <label for="email">Your Email ID:</label><input type="email" name="email">
+         </div>
+         <div>
+            <label for="phno">Your Contact Number:</label><input type="text" name="phno">
+         </div>
+         <div>
+            <label for="uid">Enter Username:</label><input type="text" name="uid">
+         </div>
+         <div>
+            <label for="pswd">Enter Password:</label><input type="password" name="pswd">
+         </div>
+         <br>
+        <div> <input type="submit" name="register" value="REGISTER"> </div>
+        <br>
+        <p>If Already Have an Account Then <a href="Registration_form1_SignIn.html" target="_blank">Sign in</a> Here.</p>
+    </form>
+</body>
+</html>
