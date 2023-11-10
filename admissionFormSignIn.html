@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style type="text/css">
+        body{
+                background-color: bisque;
+        }
+        h2{
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        form{
+            width: 350px;
+            background-color: burlywood;
+            padding: 15px 40px 40px;
+            margin: 5px auto;
+            border: 2px solid black;
+            border-radius: 5px;
+            text-align: left;
+        }
+        label{
+            display:block;
+            margin-bottom: 5px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+         }
+         div{
+            padding-bottom: 10px;
+         }
+         input[type ="submit"]{
+         font-size: 20px;
+         background: chocolate;
+         color: white;
+         margin-top: 10px;
+         cursor: pointer;
+         }
+         p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        input, select{
+            border: 1px solid black;
+            padding: 10px;
+            width: 200px;
+            box-sizing: border-box;
+            border-radius: 2px;
+         }
+
+    </style>
+</head>
+<body>
+    <form action="registered.jsp" method="post">
+        <h2>Sign In</h2>
+        <div>
+        <label for="uName">Username </label><input type="text" name="uName" id="uName">
+         </div>
+        <br>
+        <div>
+        <label for="passWord">Password </label><input type="password" name="pass" id="passWord">
+         </div>
+         <div> <input type="submit" name="signin" value="SIGN IN"> </div>
+        <br><br>
+        <p><a href="admissionForm.html" target="_blank">Register here</a> if you don't have any account.</p>
+    </form>
